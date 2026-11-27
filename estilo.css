@@ -1,0 +1,188 @@
+/* Configurações gerais */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #37a778;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  display: inline-block;
+  margin: 0 auto 10px;
+  padding: 10px 20px;
+  border: 2px solid #ffd700;
+  color: #ffd700;
+}
+
+header p {
+  margin: 5px 0 15px;
+}
+
+/* Menu de navegação */
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #1e1e1e;
+  color: #ffd700;
+}
+
+/* Conteúdo principal */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cartao {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 2px solid #ffffff;
+  background-color: #1e1e1e;
+  text-align: center;
+}
+
+/* Títulos */
+h1,
+h2,
+h3 {
+  color: #ffd700;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+/* Listas */
+ul {
+  text-align: left;
+}
+
+/* Formulários */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin: 12px 0 5px;
+}
+
+input,
+select,
+textarea {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid #ffd700;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Grupos de campos, caso use fieldset no formulário */
+fieldset {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 2px solid #ffd700;
+}
+
+legend {
+  padding: 0 5px;
+  color: #ffd700;
+}
+
+/* Botões */
+button {
+  padding: 12px 20px;
+  border: none;
+  background-color: #ffd700;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffffff;
+}
+
+/* Imagens */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Foco visível ao navegar com a tecla Tab */
+a:focus,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: 4px solid #00ffff;
+  outline-offset: 3px;
+}
+
+/* Rodapé */
+footer {
+  margin-top: 25px;
+  text-align: center;
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .cartao {
+    padding: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    width: 100%;
+  }
+}
